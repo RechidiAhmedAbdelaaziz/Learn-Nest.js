@@ -1,9 +1,9 @@
 import { Body, Controller, Get, Param, ParseIntPipe, Post, Req, Res, UseGuards, UsePipes, ValidationPipe } from '@nestjs/common';
 import { Request, Response } from 'express';
-import { CreateUserDto } from 'src/users/dtos/createuser.dto';
-import { AuthGuard } from 'src/users/guard/auth/auth.guard';
-import { UsersPipe } from 'src/users/pipe/users/users.pipe';
-import { UsersService } from 'src/users/services/users/users.service';
+import { CreateUserDto } from '../../dtos/createuser.dto';
+import { AuthGuard } from '../../guard/auth/auth.guard';
+import { UsersPipe } from '../../pipe/users/users.pipe';
+import { UsersService } from '../../services/users/users.service';
 
 @Controller('users')
 

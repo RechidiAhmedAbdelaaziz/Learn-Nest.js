@@ -1,8 +1,8 @@
 import { Resolver, Query, Args, Int, Parent, ResolveField, Mutation } from "@nestjs/graphql";
 import { User } from "../models/user";
-import { DummyUser as DummyUsers } from "src/__dummy__/dummy.user";
+import { DummyUser as DummyUsers } from "../../__dummy__/dummy.user";
 import { UserSetting } from "../models/usersetting";
-import { dummyUserSetting } from "src/__dummy__/usersetting";
+import { dummyUserSetting } from "../../__dummy__/usersetting";
 import { createUserInput } from "../utils/createuserinput";
 
 
